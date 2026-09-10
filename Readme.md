@@ -63,7 +63,6 @@ The GitHub Actions workflow in `.github/workflows/tests.yml` restores, builds, a
 ---
 
 ## 🚀 Key Features by Development Stage
-<details>
 <summary><strong>Stages 1–2: Engine & Procedural Generation</strong></summary>
 Implemented a grid-based engine with modular dungeon generation using strategy-based building blocks (halls, rooms, artifacts).
 
@@ -257,9 +256,7 @@ classDiagram
     Currency <|-- Coin
     Currency <|-- Gold
 ```
-</details>
 
-<details>
 <summary><strong>Stage 3: Polymorphic Combat System</strong></summary>
 
 *  **Decorator Pattern for Item Modifiers:** Weapons and items can receive infinite, stackable modifiers (e.g., "+5 Damage", "-5 Luck") upon generation. This was achieved by implementing the Decorator pattern, where modifier classes wrap the base item. The base item classes remain completely uncoupled and oblivious to their enhancements, dynamically calculating compounded names (e.g., *"Sword (Unlucky) (Strong)"*) and stats at runtime.
@@ -380,9 +377,7 @@ classDiagram
     MagicWeapon ..> IAttackVisitor : passes itself (this)
 
 ```
-</details>
 
-<details>
 <summary><strong>Stage 4: Configuration & Event Logging</strong></summary>
 System initialization via external JSON/INI files. Implemented a thread-safe event log capturing all critical game state changes.
   
@@ -467,9 +462,7 @@ System initialization via external JSON/INI files. Implemented a thread-safe eve
     ThemeSelector ..> IDungeonThemeFactory : wybiera
     DungeonDirector ..> IDungeonThemeFactory : używa do budowy
 ```
-</details>
 
-<details>
 <summary><strong>Stage 5 : AI Behavior & Acoustic Pathfinding</strong></summary>
   
 This stage introduces reactive environmental systems and decoupled communication using a custom **Observer** pattern (strictly avoiding the C# event).
@@ -537,9 +530,7 @@ classDiagram
     
     Enemy --> EventManagerDeath : triggers
 ```
-</details>
 
-<details>
 <summary><strong>Stage 6: TCP Multiplayer & MVC Architecture </strong></summary>
   
 Transitions the monolithic engine into a networked multiplayer game (up to 9 concurrent players) using strict MVC decoupling and TCP/JSON communication.
@@ -643,10 +634,7 @@ classDiagram
     
     GameClient "1" *-- "1" GameEngine : Hosts Local Synced Model
 ```
-</details>
-<details>
-<summary><strong>Stage 7: in progress ... </strong></summary>
-</details>
+
 
 ## 🔧 Technical Setup
 
