@@ -14,8 +14,10 @@ the client–server, MVC-structured system described here.
 ## Preview
 
 All images below are captures of the real application running on macOS with the default
-`Vault` theme (walls are `█`, items are single glyphs, enemies are lowercase letters, players
+`Vault` theme. The recording is about 30 seconds of a scripted client session (walls are `█`, items are single glyphs, enemies are lowercase letters, players
 are digits).
+
+![Recording of a scripted session: exploring, picking up items, equipping the slotted sword, fighting a zombie, a second client joining](docs/screenshots/gameplay.gif)
 
 ![Dungeon map with the statistics panel](docs/screenshots/01-dungeon-map.png)
 
